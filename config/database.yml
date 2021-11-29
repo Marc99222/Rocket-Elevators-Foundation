@@ -1,0 +1,47 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password: 
+  port: /var/run/mysqld/mysqld.sock
+
+postgres: &postgres
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: marcalexandreperussecavanagh
+  password:
+
+primary:
+  <<: *default
+  database: Rocket_Elevators_Information_System_development
+
+secondary:
+  <<: *postgres
+  database: data_warehouse
+  migrations_paths: db/secondary_migrate
+
+# secondbase:
+#   development:
+#     adapter: postgresql
+#     database: Rocket_Elevators_Information_System_development
+
+#   test:
+#     adapter: postgresql
+#     database: Rocket_Elevators_Information_System_test
+
+  
+development:
+  <<: *default
+  database: Rocket_Elevators_Information_System_development
+
+production:
+  <<: *default
+  database: Rocket_Elevators_Information_System_production
+  username: Rocket_Elevators_Information_System
+  password: <%= ENV['ROCKET_ELEVATORS_INFORMATION_SYSTEM_DATABASE_PASSWORD'] %>
+
+
+
+
