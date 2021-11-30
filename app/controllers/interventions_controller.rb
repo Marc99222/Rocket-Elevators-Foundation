@@ -1,5 +1,6 @@
 class InterventionsController < ApplicationController
   def index
+    @interventions = Intervention.new()
   end
 
 
@@ -7,7 +8,7 @@ class InterventionsController < ApplicationController
 
   def create 
 
-    @interventions = Intervention.new (interventions_params)
+    @interventions = Intervention.new(interventions_params)
 
 
 
@@ -47,20 +48,33 @@ class InterventionsController < ApplicationController
 
 
 
+  # ZENDESKst
+
+
+
+  # ZendeskAPI::Ticket.create!($client, :subject => "Task", :requester => { :name => @quote.company_name, :email => "rocketeam1234@gmail.com" }, :comment => { :body => "Subject: #{@quote.company_name}
+
+  #   Comment: The company #{@quote.company_name} has made a quote for a #{@quote.building_type} building and wants the #{@quote.plan} service. 
+    
+  #   quote informations: 
+  #   #{@quote.elevator_needed}
+  #   #{price_per_elevator.round(2)}
+  #   #{@quote.price}
+  #   #{@quote.fees}
+  #   #{@quote.total_price}
+    
+  #   The company #{@quote.company_name} can be reached at #{@quote.email}." }, :priority => "urgent")
 
 
 
 
 
-  
 
-def interventions_params
+  def interventions_params
+  params.require(:interventions).permet(:author , :result, :report, :status, :customer_id, :battery_id, :column_id, :elevator_id, :employee_id) 
+
+  end
 
 
-
-
-  # def lead_params
-  #   params.require(:lead).permit(:full_name, :company_name, :email, :phone_number, :project_name, :project_description, :departement_in_charge_of_the_elevators, :message, :file)
-  # end
 
 end
