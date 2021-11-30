@@ -84,12 +84,15 @@
                 </li>
                 <% if user_signed_in?%>
                   <% if current_user.admin==true || current_user.employee==true%>
+                  <li>
+                      <a class='navbar-link' href="/interventions">INTERVENTION</a> 
                     <li>
                       <a class='navbar-link' href="/admin">ADMIN</a>
                     </li>
                     <%end%>
                       <% end %>
                         <% if user_signed_in? %>
+                        
                           <li>
                             <%= link_to 'EDIT PROFILE' , edit_user_registration_path, :class=> 'navbar-link' %>
                           </li>
@@ -1097,7 +1100,14 @@
   <script>
     var plugin_path = "assets/plugins/";
   </script>
-  <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+  <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script> 
+
+  <%# script for link intervention.js file to index.htl.erb #intervention %>
+
+  <script src="assets/intervention.js"> 
+
+
+  //  end 
 
   <script src="assets/scripts.js"></script>
    <script src="https://www.google.com/recaptcha/api.js"></script>

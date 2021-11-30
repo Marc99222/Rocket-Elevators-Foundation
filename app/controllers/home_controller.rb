@@ -2,15 +2,34 @@ require 'zendesk_main'
 
 class HomeController < ApplicationController
   def index
+   
   end
-  
+
   def new
     @lead = Lead.new
   end
 
   def get
     @file = File.new
-    end
+  end
+
+
+  # def intervention 
+  #   @intervention = Intervention.new
+
+  #   redirect_to "#intervention"
+  # end
+  # def update
+  #   @intervention = intervention.find(params[:id])
+  #   if @intervention.update(interventin_params)
+  #     redirect_to(intervention)
+  #   end
+  # end
+
+  # def index
+  #   @intervention = Intervention.new
+  # end
+
 
   def create
     @lead = Lead.new(lead_params)
