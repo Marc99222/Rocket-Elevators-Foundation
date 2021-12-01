@@ -1,0 +1,39 @@
+I"¼(function() {
+  jQuery(function() {
+    var batteries, buildings;
+    $('#interventions_battery_id').parent().hide();
+    batteries = $('#interventions_battery_id').html();
+    console.log(batteries);
+    $('#interventions_building_id').parent().hide();
+    buildings = $('#interventions_building_id').html();
+    console.log(buildings);
+    $('#interventions_building_id').change(function() {
+      var building, options1;
+      building = $('#interventions_building_id :selected').text();
+      options1 = $(batteries).filter('optgroup[label="' + building + '"]').html();
+      return console.log(options1);
+    });
+    return $('#interventions_customer_id').change(function() {
+      var customer, options;
+      customer = $('#interventions_customer_id :selected').text();
+      options = $(buildings).filter('optgroup[label="' + customer + '"]').html();
+      console.log(options);
+      if (options) {
+        $('#interventions_building_id').html(options);
+        $('#interventions_building_id').parent().show();
+      } else {
+        $('#interventions_building_id').empty();
+        $('#interventions_building_id').parent().hide();
+      }
+      if (options2) {
+        $('#interventions_batteries_id').html(options1);
+        return $('#interventions_batteries_id').parent().show();
+      } else {
+        $('#interventions_batteries_id').html(options1);
+        return $('#interventions_batteries_id').parent().show();
+      }
+    });
+  });
+
+}).call(this);
+:ET

@@ -1,0 +1,87 @@
+I"Q(function() {
+  jQuery(function() {
+    var batteries, buildings, columns, elevators, employee;
+    $('#interventions_building_id').parent().hide();
+    buildings = $('#interventions_building_id').html();
+    console.log(buildings);
+    $('#interventions_customer_id').change(function() {
+      var customer, options;
+      customer = $('#interventions_customer_id :selected').text();
+      options = $(buildings).filter("optgroup[label=" + customer + "]").html();
+      console.log(options);
+      if (options) {
+        $('#interventions_building_id').html("<option value=''></option>" + options);
+        return $('#interventions_building_id').parent().show();
+      } else {
+        $('#interventions_building_id').empty();
+        return $('#interventions_building_id').parent().hide();
+      }
+    });
+    $('#interventions_battery_id').parent().hide();
+    batteries = $('#interventions_battery_id').html();
+    console.log(batteries);
+    $('#interventions_building_id').change(function() {
+      var building, options2;
+      building = $('#interventions_building_id :selected').text();
+      options2 = $(batteries).filter("optgroup[label=" + building + "]").html();
+      console.log(options2);
+      if (options2) {
+        $('#interventions_battery_id').html("<option value=''></option>" + options2);
+        return $('#interventions_battery_id').parent().show();
+      } else {
+        $('#interventions_battery_id').empty();
+        return $('#interventions_battery_id').parent().hide();
+      }
+    });
+    $('#interventions_column_id').parent().hide();
+    columns = $('#interventions_column_id').html();
+    console.log(columns);
+    $('#interventions_battery_id').change(function() {
+      var battery, options3;
+      battery = $('#interventions_battery_id :selected').text();
+      options3 = $(columns).filter("optgroup[label=" + battery + "]").html();
+      console.log(options3);
+      if (options3) {
+        $('#interventions_column_id').html("<option value=''></option>" + options3);
+        return $('#interventions_column_id').parent().show();
+      } else {
+        $('#interventions_column_id').empty();
+        return $('#interventions_column_id').parent().hide();
+      }
+    });
+    $('#interventions_elevator_id').parent().hide();
+    elevators = $('#interventions_elevator_id').html();
+    console.log(elevators);
+    $('#interventions_column_id').change(function() {
+      var column, options4;
+      column = $('#interventions_column_id :selected').text();
+      options4 = $(elevators).filter("optgroup[label=" + column + "]").html();
+      console.log(options4);
+      if (options4) {
+        $('#interventions_elevator_id').html("<option value=''></option>" + options4);
+        return $('#interventions_elevator_id').parent().show();
+      } else {
+        $('#interventions_elevator_id').empty();
+        return $('#interventions_elevator_id').parent().hide();
+      }
+    });
+    $('#interventions_employee_id').parent().hide();
+    employee = $('#interventions_employee_id').html();
+    console.log(employees);
+    return $('#interventions_elevator_id').change(function() {
+      var elevator, options5;
+      elevator = $('#interventions_elevator_id :selected').text();
+      options5 = $(employees).filter("optgroup[label=" + elevator + "]").html();
+      console.log(options5);
+      if (options5) {
+        $('#interventions_employee_id').html("<option value=''></option>" + options5);
+        return $('#interventions_employee_id').parent().show();
+      } else {
+        $('#interventions_employee_id').empty();
+        return $('#interventions_employee_id').parent().hide();
+      }
+    });
+  });
+
+}).call(this);
+:ET

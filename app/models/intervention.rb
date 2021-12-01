@@ -8,4 +8,3 @@ class Intervention < ApplicationRecord
 end
 
 
-# rails g migration AddInterventionToAdd customer:references

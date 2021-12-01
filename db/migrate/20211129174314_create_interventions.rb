@@ -4,9 +4,9 @@ class CreateInterventions < ActiveRecord::Migration[5.2]
 
   
       t.string :author
-      t.string :result
+      t.string :result     null: false, default: "Incomplete"
       t.string :report 
-      t.string :status 
+      t.string :status     null: false, default: "Pending"
 
       t.timestamps
     end

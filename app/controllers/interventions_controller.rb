@@ -1,19 +1,37 @@
 class InterventionsController < ApplicationController
+  #  before_action :set_current_user
   def index
     @interventions = Intervention.new()
   end
 
 
+  # def set_current_user
+  #   @author = current_user
+  #   if session[:user_id]
+  #     Current.user = User.find_by(id: session[:user_id])
 
 
   def create 
+   
+    # @author = correct_user
+    
 
     @interventions = Intervention.new(interventions_params)
+
+  
+    @interventions.save
+  redirect_to "#index"
 
 
 
   end 
 
+
+
+  # def correct_user
+  #   @interventions = current_user.interventions.find_by(author: params[:id])
+  #   redirect_to root_url if @interventions.nil?
+  # end
 
 
 
@@ -71,7 +89,8 @@ class InterventionsController < ApplicationController
 
 
   def interventions_params
-  params.require(:interventions).permet(:author , :result, :report, :status, :customer_id, :battery_id, :column_id, :elevator_id, :employee_id) 
+    
+  params.require(:interventions).permit(:author , :result, :report, :status, :customer_id, :battery_id, :column_id, :elevator_id, :employee_id) 
 
   end
 

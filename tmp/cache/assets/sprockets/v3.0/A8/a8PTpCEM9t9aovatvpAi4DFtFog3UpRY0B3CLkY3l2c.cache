@@ -1,0 +1,55 @@
+I"P(function() {
+  jQuery(function() {
+    var buildings, columns, elevators;
+    $('#interventions_building_id').parent().hide();
+    buildings = $('#interventions_building_id').html();
+    console.log(buildings);
+    $('#interventions_customer_id').change(function() {
+      var customer, options;
+      customer = $('#interventions_customer_id :selected').text();
+      options = $(buildings).filter('optgroup[label="' + customer + '"]').html();
+      console.log(options);
+      if (options) {
+        $('#interventions_building_id').html(options);
+        return $('#interventions_building_id').parent().show();
+      } else {
+        $('#interventions_building_id').empty();
+        return $('#interventions_building_id').parent().hide();
+      }
+    });
+    $('#interventions_column_id').parent().hide();
+    columns = $('#interventions_column_id').html();
+    console.log(columns);
+    $('#interventions_battery_id').change(function() {
+      var battery, options3;
+      battery = $('#interventions_battery_id :selected').text();
+      options3 = $(columns).filter('optgroup[label="' + battery + '"]').html();
+      console.log(options3);
+      if (options3) {
+        $('#interventions_column_id').html(options3);
+        return $('#interventions_column_id').parent().show();
+      } else {
+        $('#interventions_column_id').empty();
+        return $('#interventions_column_id').parent().hide();
+      }
+    });
+    $('#interventions_elevator_id').parent().hide();
+    elevators = $('#interventions_elevator_id').html();
+    console.log(columns);
+    return $('#interventions_column_id').change(function() {
+      var column, options4;
+      column = $('#interventions_column_id :selected').text();
+      options4 = $(elevators).filter('optgroup[label="' + column + '"]').html();
+      console.log(options4);
+      if (options4) {
+        $('#interventions_elevator_id').html(options4);
+        return $('#interventions_elevator_id').parent().show();
+      } else {
+        $('#interventions_elevator_id').empty();
+        return $('#interventions_elevator_id').parent().hide();
+      }
+    });
+  });
+
+}).call(this);
+:ET
