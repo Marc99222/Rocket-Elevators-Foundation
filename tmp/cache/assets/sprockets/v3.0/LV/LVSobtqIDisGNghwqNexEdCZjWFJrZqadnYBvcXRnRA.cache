@@ -1,0 +1,23 @@
+I"ÿ(function() {
+  jQuery(function() {
+    var buildings;
+    $('#interventions_building_id').parent().hide();
+    buildings = $('#interventions_building_id').html();
+    console.log(buildings);
+    return $('#interventions_customer_id').change(function() {
+      var customer, options;
+      customer = $('#interventions_customer_id :selected').text();
+      options = $(companies).filter('optgroup[label="' + customer + '"]').html();
+      console.log(options);
+      if (options) {
+        $('#interventions_building_id').html(options);
+        return $('#interventions_building_id').parent().show();
+      } else {
+        $('#interventions_building_id').empty();
+        return $('#interventions_building_id').parent().hide();
+      }
+    });
+  });
+
+}).call(this);
+:ET
