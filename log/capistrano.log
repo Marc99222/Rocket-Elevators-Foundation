@@ -806,3 +806,165 @@ tar: Exiting with failure status due to previous errors
  DEBUG [32b14184] 	fatal: not a valid object name: master
  DEBUG [32b14184] 	tar: This does not look like a tar archive
  DEBUG [32b14184] 	tar: Exiting with failure status due to previous errors
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-12-02 14:09:33 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [ff69e2c9] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [ff69e2c9] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/
+  INFO [ff69e2c9] Finished in 0.547 seconds with exit status 0 (successful).
+ DEBUG Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [56d930ae] Running /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [56d930ae] Command: /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh
+  INFO [56d930ae] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [715aaf36] Running /usr/bin/env mkdir -p /tmp as ubuntu@99.79.123.96
+ DEBUG [715aaf36] Command: /usr/bin/env mkdir -p /tmp
+  INFO [715aaf36] Finished in 0.025 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-3b34574848a0893f0a93.sh 0.0%
+  INFO Uploading /tmp/git-ssh-3b34574848a0893f0a93.sh 100.0%
+  INFO [cf91f3d6] Running /usr/bin/env chmod 700 /tmp/git-ssh-3b34574848a0893f0a93.sh as ubuntu@99.79.123.96
+ DEBUG [cf91f3d6] Command: /usr/bin/env chmod 700 /tmp/git-ssh-3b34574848a0893f0a93.sh
+  INFO [cf91f3d6] Finished in 0.028 seconds with exit status 0 (successful).
+ DEBUG [c4d3f44a] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ] as ubuntu@99.79.123.96
+ DEBUG [c4d3f44a] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ]
+ DEBUG [c4d3f44a] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo
+ DEBUG [9ce432f6] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [9ce432f6] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi
+ DEBUG [9ce432f6] Finished in 0.021 seconds with exit status 0 (successful).
+  INFO [3b89d40b] Running /usr/bin/env git remote set-url origin https://github.com/Marc99222/Rocket-Elevators-Foundation as ubuntu@99.79.123.96
+ DEBUG [3b89d40b] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3b34574848a0893f0a93.sh" ; /usr/bin/env git remote set-url origin https://github.com/Marc99222/Rocket-Elevators-Foundation )
+  INFO [3b89d40b] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [a546ae8e] Running /usr/bin/env git remote update --prune as ubuntu@99.79.123.96
+ DEBUG [a546ae8e] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3b34574848a0893f0a93.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [a546ae8e] 	Fetching origin
+ DEBUG [a546ae8e] 	From https://github.com/Marc99222/Rocket-Elevators-Foundation
+   e59b517..9b024e5  main       -> main
+  INFO [a546ae8e] Finished in 0.242 seconds with exit status 0 (successful).
+ DEBUG [85e867c6] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [85e867c6] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi
+ DEBUG [85e867c6] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [7c3746b5] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933 as ubuntu@99.79.123.96
+ DEBUG [7c3746b5] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3b34574848a0893f0a93.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933 )
+  INFO [7c3746b5] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [e69789d0] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933 as ubuntu@99.79.123.96
+ DEBUG [e69789d0] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3b34574848a0893f0a93.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933 )
+  INFO [e69789d0] Finished in 0.803 seconds with exit status 0 (successful).
+ DEBUG [edaa7cee] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [edaa7cee] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi
+ DEBUG [edaa7cee] Finished in 0.024 seconds with exit status 0 (successful).
+ DEBUG [3f891a5f] Running /usr/bin/env git rev-list --max-count=1 main as ubuntu@99.79.123.96
+ DEBUG [3f891a5f] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3b34574848a0893f0a93.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [3f891a5f] 	9b024e5d5156873fe2e2a4807f4c3ecccd223816
+ DEBUG [3f891a5f] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [a6319b15] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [a6319b15] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933'" 1>&2; false; fi
+ DEBUG [a6319b15] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [13eceb86] Running /usr/bin/env echo "9b024e5d5156873fe2e2a4807f4c3ecccd223816" > REVISION as ubuntu@99.79.123.96
+ DEBUG [13eceb86] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933 && /usr/bin/env echo "9b024e5d5156873fe2e2a4807f4c3ecccd223816" > REVISION
+  INFO [13eceb86] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [4ba6fb6f] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config as ubuntu@99.79.123.96
+ DEBUG [4ba6fb6f] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config
+  INFO [4ba6fb6f] Finished in 0.026 seconds with exit status 0 (successful).
+ DEBUG [79f9bce9] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/database.yml ] as ubuntu@99.79.123.96
+ DEBUG [79f9bce9] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/database.yml ]
+ DEBUG [79f9bce9] Finished in 0.067 seconds with exit status 1 (failed).
+ DEBUG [751169b4] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/database.yml ] as ubuntu@99.79.123.96
+ DEBUG [751169b4] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/database.yml ]
+ DEBUG [751169b4] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [574bba6f] Running /usr/bin/env rm /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/database.yml as ubuntu@99.79.123.96
+ DEBUG [574bba6f] Command: /usr/bin/env rm /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/database.yml
+  INFO [574bba6f] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [ff93a27c] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/database.yml as ubuntu@99.79.123.96
+ DEBUG [ff93a27c] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/database.yml
+  INFO [ff93a27c] Finished in 0.028 seconds with exit status 0 (successful).
+ DEBUG [47df6ef0] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/application.yml ] as ubuntu@99.79.123.96
+ DEBUG [47df6ef0] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/application.yml ]
+ DEBUG [47df6ef0] Finished in 0.069 seconds with exit status 1 (failed).
+ DEBUG [42025a2b] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/application.yml ] as ubuntu@99.79.123.96
+ DEBUG [42025a2b] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/application.yml ]
+ DEBUG [42025a2b] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [8ac249b8] Running /usr/bin/env rm /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/application.yml as ubuntu@99.79.123.96
+ DEBUG [8ac249b8] Command: /usr/bin/env rm /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/application.yml
+  INFO [8ac249b8] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [3667f048] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/application.yml /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/application.yml as ubuntu@99.79.123.96
+ DEBUG [3667f048] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/application.yml /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/config/application.yml
+  INFO [3667f048] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [2fc41271] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933 /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/public as ubuntu@99.79.123.96
+ DEBUG [2fc41271] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933 /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/public
+  INFO [2fc41271] Finished in 0.069 seconds with exit status 0 (successful).
+ DEBUG [bfd91e63] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp/pids ] as ubuntu@99.79.123.96
+ DEBUG [bfd91e63] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp/pids ]
+ DEBUG [bfd91e63] Finished in 0.024 seconds with exit status 1 (failed).
+ DEBUG [396f5705] Running [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp/pids ] as ubuntu@99.79.123.96
+ DEBUG [396f5705] Command: [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp/pids ]
+ DEBUG [396f5705] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [808fdd52] Running /usr/bin/env rm -rf /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp/pids as ubuntu@99.79.123.96
+ DEBUG [808fdd52] Command: /usr/bin/env rm -rf /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp/pids
+  INFO [808fdd52] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [fceb5111] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/pids /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp/pids as ubuntu@99.79.123.96
+ DEBUG [fceb5111] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/pids /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp/pids
+  INFO [fceb5111] Finished in 0.071 seconds with exit status 0 (successful).
+ DEBUG [c6f64961] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp/sockets ] as ubuntu@99.79.123.96
+ DEBUG [c6f64961] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp/sockets ]
+ DEBUG [c6f64961] Finished in 0.025 seconds with exit status 1 (failed).
+ DEBUG [bf53cf28] Running [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp/sockets ] as ubuntu@99.79.123.96
+ DEBUG [bf53cf28] Command: [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp/sockets ]
+ DEBUG [bf53cf28] Finished in 0.066 seconds with exit status 1 (failed).
+  INFO [507e6065] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/sockets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp/sockets as ubuntu@99.79.123.96
+ DEBUG [507e6065] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/sockets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/tmp/sockets
+  INFO [507e6065] Finished in 0.023 seconds with exit status 0 (successful).
+ DEBUG [a6df0629] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/log ] as ubuntu@99.79.123.96
+ DEBUG [a6df0629] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/log ]
+ DEBUG [a6df0629] Finished in 0.070 seconds with exit status 1 (failed).
+ DEBUG [6d140be7] Running [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/log ] as ubuntu@99.79.123.96
+ DEBUG [6d140be7] Command: [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/log ]
+ DEBUG [6d140be7] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [8d0bffed] Running /usr/bin/env rm -rf /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/log as ubuntu@99.79.123.96
+ DEBUG [8d0bffed] Command: /usr/bin/env rm -rf /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/log
+  INFO [8d0bffed] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [70abfda1] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/log /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/log as ubuntu@99.79.123.96
+ DEBUG [70abfda1] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/log /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/log
+  INFO [70abfda1] Finished in 0.027 seconds with exit status 0 (successful).
+ DEBUG [f0ac0c43] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/public/assets ] as ubuntu@99.79.123.96
+ DEBUG [f0ac0c43] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/public/assets ]
+ DEBUG [f0ac0c43] Finished in 0.065 seconds with exit status 1 (failed).
+ DEBUG [cdb3e720] Running [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/public/assets ] as ubuntu@99.79.123.96
+ DEBUG [cdb3e720] Command: [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/public/assets ]
+ DEBUG [cdb3e720] Finished in 0.023 seconds with exit status 1 (failed).
+  INFO [0b8c90f7] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/public/assets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/public/assets as ubuntu@99.79.123.96
+ DEBUG [0b8c90f7] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/public/assets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933/public/assets
+  INFO [0b8c90f7] Finished in 0.069 seconds with exit status 0 (successful).
+ DEBUG [c27c03f0] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [c27c03f0] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933'" 1>&2; false; fi
+ DEBUG [c27c03f0] Finished in 0.022 seconds with exit status 0 (successful).
+  INFO [b01da624] Running /usr/bin/env /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh rvm --install install . as ubuntu@99.79.123.96
+ DEBUG [b01da624] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202190933 && /usr/bin/env /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh rvm --install install .
+ DEBUG [b01da624] 	Warning, new version of rvm available '1.29.12', you are using older version '1.29.9'.
+You can disable this warning with:   echo rvm_autoupdate_flag=0 >> ~/.rvmrc
+You can enable auto-update with:     echo rvm_autoupdate_flag=2 >> ~/.rvmrc
+You can update manually with:        rvm get VERSION                         (e.g. 'rvm get stable')
+
+ DEBUG [b01da624] 	Already installed ruby-2.6.6.
+To reinstall use:
+
+    rvm reinstall ruby-2.6.6
+
+  INFO [b01da624] Finished in 0.480 seconds with exit status 0 (successful).
+  INFO [5a90d612] Running /usr/bin/env git ls-remote https://github.com/Marc99222/Rocket-Elevators-Foundation HEAD as ubuntu@99.79.123.96
+ DEBUG [5a90d612] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3b34574848a0893f0a93.sh" ; /usr/bin/env git ls-remote https://github.com/Marc99222/Rocket-Elevators-Foundation HEAD )
+ DEBUG [5a90d612] 	9b024e5d5156873fe2e2a4807f4c3ecccd223816	HEAD
+  INFO [5a90d612] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [77a4364e] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases as ubuntu@99.79.123.96
+ DEBUG [77a4364e] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases
+  INFO [77a4364e] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [68d732ef] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/pids /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/sockets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/log /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/public/assets as ubuntu@99.79.123.96
+ DEBUG [68d732ef] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/pids /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/sockets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/log /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/public/assets
+  INFO [68d732ef] Finished in 0.022 seconds with exit status 0 (successful).
+  INFO [38806c64] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config as ubuntu@99.79.123.96
+ DEBUG [38806c64] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config
+  INFO [38806c64] Finished in 0.066 seconds with exit status 0 (successful).
+ DEBUG [f526bc5b] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml ] as ubuntu@99.79.123.96
+ DEBUG [f526bc5b] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml ]
+ DEBUG [f526bc5b] Finished in 0.025 seconds with exit status 1 (failed).
+ ERROR linked file /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml does not exist on 99.79.123.96
