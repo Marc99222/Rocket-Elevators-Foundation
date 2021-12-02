@@ -182,6 +182,8 @@ ActiveRecord::Schema.define(version: 2021_11_30_222338) do
     t.string "result"
     t.string "report"
     t.string "status"
+    t.datetime "start_at"
+    t.datetime "end_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "customer_id"

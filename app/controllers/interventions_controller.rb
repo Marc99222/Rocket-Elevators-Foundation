@@ -1,5 +1,5 @@
 class InterventionsController < ApplicationController
-  #  before_action :set_current_user
+  #  before_action :correct_user
   def index
     @interventions = Intervention.new()
   end
@@ -13,14 +13,35 @@ class InterventionsController < ApplicationController
 
   def create 
    
-    # @author = correct_user
+  # 2 @author.correct_user()
+  
     
 
     @interventions = Intervention.new(interventions_params)
+    @interventions.author = current_user.id
+    @interventions.result = 'Incomplete'
+    @interventions.status =  'Pending'
+    @interventions.start_at =  nil
+    @interventions.end_at =  nil
+    
+    
 
+
+
+
+    # puts(@intervention.author)
+    puts("***************************************************#{@interventions.author}")
+    puts("***************************************************#{@interventions.result}")
+    puts("***************************************************#{@interventions.status}")
+    puts("***************************************************#{@interventions.report}")
+    puts("***************************************************#{@interventions.customer_id}")
+    puts("***************************************************#{@interventions.building_id}")
+    puts("***************************************************#{@interventions.battery_id}")
+    puts("***************************************************#{@interventions.column_id}")
+    puts("***************************************************#{@interventions.elevator_id}")
   
     @interventions.save
-  redirect_to "#index"
+  redirect_to "intervention/#index"
 
 
 
@@ -29,7 +50,7 @@ class InterventionsController < ApplicationController
 
 
   # def correct_user
-  #   @interventions = current_user.interventions.find_by(author: params[:id])
+  #   @interventions = current_user.interventions.find_by(id: params[:author])
   #   redirect_to root_url if @interventions.nil?
   # end
 
@@ -90,7 +111,7 @@ class InterventionsController < ApplicationController
 
   def interventions_params
     
-  params.require(:interventions).permit(:author , :result, :report, :status, :customer_id, :battery_id, :column_id, :elevator_id, :employee_id) 
+  params.require(:interventions).permit(:author , :result, :report, :status, :customer_id, :building_id, :battery_id, :column_id, :elevator_id, :employee_id, :start_at, :end_at) 
 
   end
 
