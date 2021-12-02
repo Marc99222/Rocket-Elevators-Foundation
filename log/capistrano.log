@@ -189,3 +189,36 @@ remote: Please see https://github.blog/2020-12-15-token-authentication-requireme
  DEBUG [9478607d] 	remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
 remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
 fatal: Authentication failed for 'https://github.com/Marc99222/Rocket-Elevators-Foundation/'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-12-02 13:09:04 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6aa1ef08] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [6aa1ef08] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/
+  INFO [6aa1ef08] Finished in 0.569 seconds with exit status 0 (successful).
+ DEBUG Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [9494f0ed] Running /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [9494f0ed] Command: /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh
+  INFO [9494f0ed] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [5e249931] Running /usr/bin/env mkdir -p /tmp as ubuntu@99.79.123.96
+ DEBUG [5e249931] Command: /usr/bin/env mkdir -p /tmp
+  INFO [5e249931] Finished in 0.030 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-00809486401b3d11cbc0.sh 0.0%
+  INFO Uploading /tmp/git-ssh-00809486401b3d11cbc0.sh 100.0%
+  INFO [cf7e012b] Running /usr/bin/env chmod 700 /tmp/git-ssh-00809486401b3d11cbc0.sh as ubuntu@99.79.123.96
+ DEBUG [cf7e012b] Command: /usr/bin/env chmod 700 /tmp/git-ssh-00809486401b3d11cbc0.sh
+  INFO [cf7e012b] Finished in 0.029 seconds with exit status 0 (successful).
+ DEBUG [e5a0dfeb] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ] as ubuntu@99.79.123.96
+ DEBUG [e5a0dfeb] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ]
+ DEBUG [e5a0dfeb] Finished in 0.068 seconds with exit status 1 (failed).
+ DEBUG [a2b2b46c] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [a2b2b46c] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH'" 1>&2; false; fi
+ DEBUG [a2b2b46c] Finished in 0.023 seconds with exit status 0 (successful).
+  INFO [b08c97bd] Running /usr/bin/env git clone --mirror git@github.com:Marc99222/Rocket-Elevators-Foundation.git /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo as ubuntu@99.79.123.96
+ DEBUG [b08c97bd] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-00809486401b3d11cbc0.sh" ; /usr/bin/env git clone --mirror git@github.com:Marc99222/Rocket-Elevators-Foundation.git /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo )
+ DEBUG [b08c97bd] 	Cloning into bare repository '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'...
+ DEBUG [b08c97bd] 	ERROR: Repository not found.
+ DEBUG [b08c97bd] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
