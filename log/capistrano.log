@@ -272,3 +272,49 @@ and the repository exists.
  DEBUG [fe26af7a] 	fatal: not a valid object name: master
  DEBUG [fe26af7a] 	tar: This does not look like a tar archive
  DEBUG [fe26af7a] 	tar: Exiting with failure status due to previous errors
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-12-02 13:33:10 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a375ae36] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [a375ae36] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/
+  INFO [a375ae36] Finished in 0.552 seconds with exit status 0 (successful).
+ DEBUG Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [864da7ef] Running /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [864da7ef] Command: /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh
+  INFO [864da7ef] Finished in 0.079 seconds with exit status 0 (successful).
+  INFO [bd60a083] Running /usr/bin/env mkdir -p /tmp as ubuntu@99.79.123.96
+ DEBUG [bd60a083] Command: /usr/bin/env mkdir -p /tmp
+  INFO [bd60a083] Finished in 0.026 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-7586cf70b013c45b0a06.sh 0.0%
+  INFO Uploading /tmp/git-ssh-7586cf70b013c45b0a06.sh 100.0%
+  INFO [5fd62d59] Running /usr/bin/env chmod 700 /tmp/git-ssh-7586cf70b013c45b0a06.sh as ubuntu@99.79.123.96
+ DEBUG [5fd62d59] Command: /usr/bin/env chmod 700 /tmp/git-ssh-7586cf70b013c45b0a06.sh
+  INFO [5fd62d59] Finished in 0.027 seconds with exit status 0 (successful).
+ DEBUG [f548d924] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ] as ubuntu@99.79.123.96
+ DEBUG [f548d924] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ]
+ DEBUG [f548d924] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo
+ DEBUG [3d9d2a1c] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [3d9d2a1c] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi
+ DEBUG [3d9d2a1c] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [3325efb0] Running /usr/bin/env git remote set-url origin https://github.com/Marc99222/Rocket-Elevators-Foundation as ubuntu@99.79.123.96
+ DEBUG [3325efb0] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7586cf70b013c45b0a06.sh" ; /usr/bin/env git remote set-url origin https://github.com/Marc99222/Rocket-Elevators-Foundation )
+  INFO [3325efb0] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO [f988394d] Running /usr/bin/env git remote update --prune as ubuntu@99.79.123.96
+ DEBUG [f988394d] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7586cf70b013c45b0a06.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [f988394d] 	Fetching origin
+ DEBUG [f988394d] 	From https://github.com/Marc99222/Rocket-Elevators-Foundation
+   e631aae..c1b7610  main       -> main
+  INFO [f988394d] Finished in 0.247 seconds with exit status 0 (successful).
+ DEBUG [20fafd6e] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [20fafd6e] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi
+ DEBUG [20fafd6e] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [a1242e98] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202183311 as ubuntu@99.79.123.96
+ DEBUG [a1242e98] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7586cf70b013c45b0a06.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202183311 )
+  INFO [a1242e98] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [0f518e3f] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202183311 as ubuntu@99.79.123.96
+ DEBUG [0f518e3f] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7586cf70b013c45b0a06.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202183311 )
+ DEBUG [0f518e3f] 	fatal: not a valid object name: master
+ DEBUG [0f518e3f] 	tar: This does not look like a tar archive
+ DEBUG [0f518e3f] 	tar: Exiting with failure status due to previous errors
