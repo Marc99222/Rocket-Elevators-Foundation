@@ -222,3 +222,53 @@ fatal: Authentication failed for 'https://github.com/Marc99222/Rocket-Elevators-
 
 Please make sure you have the correct access rights
 and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-12-02 13:22:39 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [7e46506b] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [7e46506b] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/
+  INFO [7e46506b] Finished in 0.567 seconds with exit status 0 (successful).
+ DEBUG Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [53888fcd] Running /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [53888fcd] Command: /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh
+  INFO [53888fcd] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO [fb9da7fc] Running /usr/bin/env mkdir -p /tmp as ubuntu@99.79.123.96
+ DEBUG [fb9da7fc] Command: /usr/bin/env mkdir -p /tmp
+  INFO [fb9da7fc] Finished in 0.023 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-addfea773d352a95bc6b.sh 0.0%
+  INFO Uploading /tmp/git-ssh-addfea773d352a95bc6b.sh 100.0%
+  INFO [08ddd26f] Running /usr/bin/env chmod 700 /tmp/git-ssh-addfea773d352a95bc6b.sh as ubuntu@99.79.123.96
+ DEBUG [08ddd26f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-addfea773d352a95bc6b.sh
+  INFO [08ddd26f] Finished in 0.028 seconds with exit status 0 (successful).
+ DEBUG [6f9d56a0] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ] as ubuntu@99.79.123.96
+ DEBUG [6f9d56a0] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ]
+ DEBUG [6f9d56a0] Finished in 0.064 seconds with exit status 1 (failed).
+ DEBUG [4dbd5c64] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [4dbd5c64] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH'" 1>&2; false; fi
+ DEBUG [4dbd5c64] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [6789a751] Running /usr/bin/env git clone --mirror https://github.com/Marc99222/Rocket-Elevators-Foundation /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo as ubuntu@99.79.123.96
+ DEBUG [6789a751] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-addfea773d352a95bc6b.sh" ; /usr/bin/env git clone --mirror https://github.com/Marc99222/Rocket-Elevators-Foundation /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo )
+ DEBUG [6789a751] 	Cloning into bare repository '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'...
+  INFO [6789a751] Finished in 3.537 seconds with exit status 0 (successful).
+ DEBUG [dce7f54c] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [dce7f54c] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi
+ DEBUG [dce7f54c] Finished in 0.022 seconds with exit status 0 (successful).
+  INFO [bfaab343] Running /usr/bin/env git remote set-url origin https://github.com/Marc99222/Rocket-Elevators-Foundation as ubuntu@99.79.123.96
+ DEBUG [bfaab343] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-addfea773d352a95bc6b.sh" ; /usr/bin/env git remote set-url origin https://github.com/Marc99222/Rocket-Elevators-Foundation )
+  INFO [bfaab343] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [d52c447e] Running /usr/bin/env git remote update --prune as ubuntu@99.79.123.96
+ DEBUG [d52c447e] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-addfea773d352a95bc6b.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [d52c447e] 	Fetching origin
+  INFO [d52c447e] Finished in 0.162 seconds with exit status 0 (successful).
+ DEBUG [532e96a1] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [532e96a1] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi
+ DEBUG [532e96a1] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [f32e6f80] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202182239 as ubuntu@99.79.123.96
+ DEBUG [f32e6f80] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-addfea773d352a95bc6b.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202182239 )
+  INFO [f32e6f80] Finished in 0.026 seconds with exit status 0 (successful).
+  INFO [fe26af7a] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202182239 as ubuntu@99.79.123.96
+ DEBUG [fe26af7a] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-addfea773d352a95bc6b.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202182239 )
+ DEBUG [fe26af7a] 	fatal: not a valid object name: master
+ DEBUG [fe26af7a] 	tar: This does not look like a tar archive
+ DEBUG [fe26af7a] 	tar: Exiting with failure status due to previous errors
