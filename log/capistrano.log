@@ -1,0 +1,96 @@
+# Logfile created on 2021-12-02 12:47:02 -0500 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-12-02 12:47:02 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9e316f53] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [9e316f53] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/
+  INFO [9e316f53] Finished in 0.983 seconds with exit status 0 (successful).
+ DEBUG Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [971c0c1a] Running /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [971c0c1a] Command: /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh
+  INFO [971c0c1a] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [13d403dd] Running /usr/bin/env mkdir -p /tmp as ubuntu@99.79.123.96
+ DEBUG [13d403dd] Command: /usr/bin/env mkdir -p /tmp
+  INFO [13d403dd] Finished in 0.022 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-a0c0b98a7b4e224b7a40.sh 0.0%
+  INFO Uploading /tmp/git-ssh-a0c0b98a7b4e224b7a40.sh 100.0%
+  INFO [5911b077] Running /usr/bin/env chmod 700 /tmp/git-ssh-a0c0b98a7b4e224b7a40.sh as ubuntu@99.79.123.96
+ DEBUG [5911b077] Command: /usr/bin/env chmod 700 /tmp/git-ssh-a0c0b98a7b4e224b7a40.sh
+  INFO [5911b077] Finished in 0.025 seconds with exit status 0 (successful).
+ DEBUG [1de7a3f6] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ] as ubuntu@99.79.123.96
+ DEBUG [1de7a3f6] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ]
+ DEBUG [1de7a3f6] Finished in 0.064 seconds with exit status 1 (failed).
+ DEBUG [e6d7ff3c] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [e6d7ff3c] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH'" 1>&2; false; fi
+ DEBUG [e6d7ff3c] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [dce2a96d] Running /usr/bin/env git clone --mirror https://github.com/Marc99222/Rocket-Elevators-Foundation /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo as ubuntu@99.79.123.96
+ DEBUG [dce2a96d] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a0c0b98a7b4e224b7a40.sh" ; /usr/bin/env git clone --mirror https://github.com/Marc99222/Rocket-Elevators-Foundation /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo )
+ DEBUG [dce2a96d] 	Cloning into bare repository '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'...
+ DEBUG [dce2a96d] 	remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+ DEBUG [dce2a96d] 	fatal: Authentication failed for 'https://github.com/Marc99222/Rocket-Elevators-Foundation/'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-12-02 12:59:32 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [41043ac1] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [41043ac1] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/
+  INFO [41043ac1] Finished in 0.585 seconds with exit status 0 (successful).
+ DEBUG Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [50019d9f] Running /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [50019d9f] Command: /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh
+  INFO [50019d9f] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [e02343a4] Running /usr/bin/env mkdir -p /tmp as ubuntu@99.79.123.96
+ DEBUG [e02343a4] Command: /usr/bin/env mkdir -p /tmp
+  INFO [e02343a4] Finished in 0.024 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-cb1bcf9ec46634eb1722.sh 0.0%
+  INFO Uploading /tmp/git-ssh-cb1bcf9ec46634eb1722.sh 100.0%
+  INFO [7eb1e25d] Running /usr/bin/env chmod 700 /tmp/git-ssh-cb1bcf9ec46634eb1722.sh as ubuntu@99.79.123.96
+ DEBUG [7eb1e25d] Command: /usr/bin/env chmod 700 /tmp/git-ssh-cb1bcf9ec46634eb1722.sh
+  INFO [7eb1e25d] Finished in 0.028 seconds with exit status 0 (successful).
+ DEBUG [46dda3cf] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ] as ubuntu@99.79.123.96
+ DEBUG [46dda3cf] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ]
+ DEBUG [46dda3cf] Finished in 0.065 seconds with exit status 1 (failed).
+ DEBUG [abbf591e] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [abbf591e] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH'" 1>&2; false; fi
+ DEBUG [abbf591e] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [2e2e9636] Running /usr/bin/env git clone --mirror https://github.com/Marc99222/Rocket-Elevators-Foundation /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo as ubuntu@99.79.123.96
+ DEBUG [2e2e9636] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cb1bcf9ec46634eb1722.sh" ; /usr/bin/env git clone --mirror https://github.com/Marc99222/Rocket-Elevators-Foundation /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo )
+ DEBUG [2e2e9636] 	Cloning into bare repository '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'...
+ DEBUG [2e2e9636] 	remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+ DEBUG [2e2e9636] 	fatal: Authentication failed for 'https://github.com/Marc99222/Rocket-Elevators-Foundation/'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-12-02 13:00:24 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [19ae29dc] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [19ae29dc] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/
+  INFO [19ae29dc] Finished in 0.648 seconds with exit status 0 (successful).
+ DEBUG Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [eba7d02f] Running /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [eba7d02f] Command: /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh
+  INFO [eba7d02f] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [0fdc47af] Running /usr/bin/env mkdir -p /tmp as ubuntu@99.79.123.96
+ DEBUG [0fdc47af] Command: /usr/bin/env mkdir -p /tmp
+  INFO [0fdc47af] Finished in 0.022 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-8219c341ffccfb7ef726.sh 0.0%
+  INFO Uploading /tmp/git-ssh-8219c341ffccfb7ef726.sh 100.0%
+  INFO [e6f0f9cb] Running /usr/bin/env chmod 700 /tmp/git-ssh-8219c341ffccfb7ef726.sh as ubuntu@99.79.123.96
+ DEBUG [e6f0f9cb] Command: /usr/bin/env chmod 700 /tmp/git-ssh-8219c341ffccfb7ef726.sh
+  INFO [e6f0f9cb] Finished in 0.030 seconds with exit status 0 (successful).
+ DEBUG [ed387081] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ] as ubuntu@99.79.123.96
+ DEBUG [ed387081] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ]
+ DEBUG [ed387081] Finished in 0.070 seconds with exit status 1 (failed).
+ DEBUG [da89252e] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [da89252e] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH'" 1>&2; false; fi
+ DEBUG [da89252e] Finished in 0.023 seconds with exit status 0 (successful).
+  INFO [6ace9558] Running /usr/bin/env git clone --mirror git@github.com:Marc99222/Rocket-Elevators-Foundation.git /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo as ubuntu@99.79.123.96
+ DEBUG [6ace9558] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-8219c341ffccfb7ef726.sh" ; /usr/bin/env git clone --mirror git@github.com:Marc99222/Rocket-Elevators-Foundation.git /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo )
+ DEBUG [6ace9558] 	Cloning into bare repository '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'...
+ DEBUG [6ace9558] 	ERROR: Repository not found.
+ DEBUG [6ace9558] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
