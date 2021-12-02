@@ -5,6 +5,7 @@ before 'deploy', 'rvm1:install:ruby'
 set :rvm_map_bins, [ 'rake', 'gem', 'bundle', 'ruby', 'puma', 'pumactl' ]
 set :application, "MARC_ALEXANDRE_PERUSSE_CAVANAGH"
 set :repo_url, "https://github.com/Marc99222/Rocket-Elevators-Foundation"
+set :branch, "main"
 # set :branch, ENV['BRANCH'] if ENV['BRANCH']
 
 # Default branch is :main
