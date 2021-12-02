@@ -16,18 +16,18 @@ class InterventionsController < ApplicationController
     @interventions.status =  'Pending'
     @interventions.start_at =  nil
     @interventions.end_at =  nil
-    ZendeskAPI::Ticket.create!($client, :subject => "Task", :requester => { :name => @interventions.company_name, :email => "marcapc@outlook.com" }, :comment => { :body => "Subject: #{@interventions.company_name}
+    # ZendeskAPI::Ticket.create!($client, :subject => "Task", :requester => { :name => @interventions.company_name, :email => "marcapc@outlook.com" }, :comment => { :body => "Subject: #{@interventions.company_name}
 
-    Comment: The company #{@interventions.company_name} has made a interventon for a #{@interventions.building_id} building and wants the #{@interventions.plan} service. 
+    # Comment: The company #{@interventions.company_name} has made a interventon for a #{@interventions.building_id} building and wants the #{@interventions.plan} service. 
     
-    interventions informations: 
-    #{@interventions.battery_id}
-    #{@interventions.column_id}
-    #{@interventions.elevator_id}
-    #{@interventions.elevator_id}
+    # interventions informations: 
+    # #{@interventions.battery_id}
+    # #{@interventions.column_id}
+    # #{@interventions.elevator_id}
+    # #{@interventions.elevator_id}
     
   
-    The company #{@interventions.company_name} can be reached at #{@interventions.email}." }, :priority => "urgent")
+    # The company #{@interventions.company_name} can be reached at #{@interventions.email}." }, :priority => "urgent")
 
   
 
@@ -42,7 +42,7 @@ class InterventionsController < ApplicationController
     puts("***************************************************#{@interventions.elevator_id}")
   
     @interventions.save
-  redirect_to "intervention/#index"
+  redirect_to "#index"
 
 
   end 
