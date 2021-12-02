@@ -2,7 +2,7 @@ development:
   twilio_account_sid: "ACb0a3e2a1933b587ddae7788edff01416"
   twilio_auth_token: "e31bd4ca269d3efd814eff738dcfa2f7"
   twilio_phone_number: "+15814814931"
-  zendesk_api_key: "DWjv4AnNm0jfxeVdQ7h43SBQgjJWc9UnF4tXYa7M"
+  zendesk_api_key: ""
   SENDGRID_API_KEY: "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"
   google_map_api_key: "AIzaSyCYrqDV-0WJCpE5wSEPu3zpa7_G_LQ7naA"
   google_captcha: "6LeJEkcdAAAAAJ1ytjuQ-hsX8338YlNSO4gWD9Bq"

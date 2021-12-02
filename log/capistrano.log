@@ -968,3 +968,592 @@ To reinstall use:
  DEBUG [f526bc5b] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml ]
  DEBUG [f526bc5b] Finished in 0.025 seconds with exit status 1 (failed).
  ERROR linked file /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml does not exist on 99.79.123.96
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-12-02 15:20:24 -0500 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+  INFO [61b939d3] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [61b939d3] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/
+  INFO [61b939d3] Finished in 0.604 seconds with exit status 0 (successful).
+ DEBUG Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [3ce0d750] Running /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [3ce0d750] Command: /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh
+  INFO [3ce0d750] Finished in 0.070 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/puma.rb 0.0%
+  INFO Uploading /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/puma.rb 100.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-12-02 15:21:49 -0500 cap production puma:nginx_config
+  INFO ---------------------------------------------------------------------------
+  INFO [47984563] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [47984563] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/
+  INFO [47984563] Finished in 0.553 seconds with exit status 0 (successful).
+ DEBUG Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [e7f4629d] Running /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [e7f4629d] Command: /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh
+  INFO [e7f4629d] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/nginx_MARC_ALEXANDRE_PERUSSE_CAVANAGH_production 0.0%
+  INFO Uploading /tmp/nginx_MARC_ALEXANDRE_PERUSSE_CAVANAGH_production 100.0%
+  INFO [46a81a8f] Running /usr/bin/env sudo mv /tmp/nginx_MARC_ALEXANDRE_PERUSSE_CAVANAGH_production /etc/nginx/sites-available/MARC_ALEXANDRE_PERUSSE_CAVANAGH_production as ubuntu@99.79.123.96
+ DEBUG [46a81a8f] Command: /usr/bin/env sudo mv /tmp/nginx_MARC_ALEXANDRE_PERUSSE_CAVANAGH_production /etc/nginx/sites-available/MARC_ALEXANDRE_PERUSSE_CAVANAGH_production
+  INFO [46a81a8f] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO [56c3a05e] Running /usr/bin/env sudo ln -fs /etc/nginx/sites-available/MARC_ALEXANDRE_PERUSSE_CAVANAGH_production /etc/nginx/sites-enabled/MARC_ALEXANDRE_PERUSSE_CAVANAGH_production as ubuntu@99.79.123.96
+ DEBUG [56c3a05e] Command: /usr/bin/env sudo ln -fs /etc/nginx/sites-available/MARC_ALEXANDRE_PERUSSE_CAVANAGH_production /etc/nginx/sites-enabled/MARC_ALEXANDRE_PERUSSE_CAVANAGH_production
+  INFO [56c3a05e] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-12-02 15:57:45 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [20989cc1] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [20989cc1] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/
+  INFO [20989cc1] Finished in 0.589 seconds with exit status 0 (successful).
+ DEBUG Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [059e2452] Running /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [059e2452] Command: /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh
+  INFO [059e2452] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [2be0f1f0] Running /usr/bin/env mkdir -p /tmp as ubuntu@99.79.123.96
+ DEBUG [2be0f1f0] Command: /usr/bin/env mkdir -p /tmp
+  INFO [2be0f1f0] Finished in 0.023 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-5ffa7064e0f438a1a536.sh 0.0%
+  INFO Uploading /tmp/git-ssh-5ffa7064e0f438a1a536.sh 100.0%
+  INFO [f0eefb56] Running /usr/bin/env chmod 700 /tmp/git-ssh-5ffa7064e0f438a1a536.sh as ubuntu@99.79.123.96
+ DEBUG [f0eefb56] Command: /usr/bin/env chmod 700 /tmp/git-ssh-5ffa7064e0f438a1a536.sh
+  INFO [f0eefb56] Finished in 0.027 seconds with exit status 0 (successful).
+ DEBUG [ed1ee650] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ] as ubuntu@99.79.123.96
+ DEBUG [ed1ee650] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ]
+ DEBUG [ed1ee650] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo
+ DEBUG [4b095d1d] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [4b095d1d] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi
+ DEBUG [4b095d1d] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [26115b7b] Running /usr/bin/env git remote set-url origin https://github.com/Marc99222/Rocket-Elevators-Foundation as ubuntu@99.79.123.96
+ DEBUG [26115b7b] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5ffa7064e0f438a1a536.sh" ; /usr/bin/env git remote set-url origin https://github.com/Marc99222/Rocket-Elevators-Foundation )
+  INFO [26115b7b] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [d86ca91a] Running /usr/bin/env git remote update --prune as ubuntu@99.79.123.96
+ DEBUG [d86ca91a] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5ffa7064e0f438a1a536.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [d86ca91a] 	Fetching origin
+ DEBUG [d86ca91a] 	From https://github.com/Marc99222/Rocket-Elevators-Foundation
+   9b024e5..c1ee27e  main       -> main
+  INFO [d86ca91a] Finished in 0.248 seconds with exit status 0 (successful).
+ DEBUG [e62b54e7] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [e62b54e7] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi
+ DEBUG [e62b54e7] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [86fa4304] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745 as ubuntu@99.79.123.96
+ DEBUG [86fa4304] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5ffa7064e0f438a1a536.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745 )
+  INFO [86fa4304] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [5a019850] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745 as ubuntu@99.79.123.96
+ DEBUG [5a019850] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5ffa7064e0f438a1a536.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745 )
+  INFO [5a019850] Finished in 0.823 seconds with exit status 0 (successful).
+ DEBUG [e52da22d] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [e52da22d] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi
+ DEBUG [e52da22d] Finished in 0.023 seconds with exit status 0 (successful).
+ DEBUG [ac3cc599] Running /usr/bin/env git rev-list --max-count=1 main as ubuntu@99.79.123.96
+ DEBUG [ac3cc599] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5ffa7064e0f438a1a536.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [ac3cc599] 	c1ee27ea9f9b4e9d4ed46a0bb91aa03bf468413e
+ DEBUG [ac3cc599] Finished in 0.070 seconds with exit status 0 (successful).
+ DEBUG [1347a577] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [1347a577] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745'" 1>&2; false; fi
+ DEBUG [1347a577] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [645ee7b8] Running /usr/bin/env echo "c1ee27ea9f9b4e9d4ed46a0bb91aa03bf468413e" > REVISION as ubuntu@99.79.123.96
+ DEBUG [645ee7b8] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745 && /usr/bin/env echo "c1ee27ea9f9b4e9d4ed46a0bb91aa03bf468413e" > REVISION
+  INFO [645ee7b8] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [ad1ff341] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config as ubuntu@99.79.123.96
+ DEBUG [ad1ff341] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config
+  INFO [ad1ff341] Finished in 0.026 seconds with exit status 0 (successful).
+ DEBUG [76a3c6bb] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/database.yml ] as ubuntu@99.79.123.96
+ DEBUG [76a3c6bb] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/database.yml ]
+ DEBUG [76a3c6bb] Finished in 0.066 seconds with exit status 1 (failed).
+ DEBUG [1a4f6b75] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/database.yml ] as ubuntu@99.79.123.96
+ DEBUG [1a4f6b75] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/database.yml ]
+ DEBUG [1a4f6b75] Finished in 0.026 seconds with exit status 0 (successful).
+  INFO [2df019e7] Running /usr/bin/env rm /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/database.yml as ubuntu@99.79.123.96
+ DEBUG [2df019e7] Command: /usr/bin/env rm /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/database.yml
+  INFO [2df019e7] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [c8c1e5fd] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/database.yml as ubuntu@99.79.123.96
+ DEBUG [c8c1e5fd] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/database.yml
+  INFO [c8c1e5fd] Finished in 0.023 seconds with exit status 0 (successful).
+ DEBUG [e3eace71] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/application.yml ] as ubuntu@99.79.123.96
+ DEBUG [e3eace71] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/application.yml ]
+ DEBUG [e3eace71] Finished in 0.068 seconds with exit status 1 (failed).
+ DEBUG [768d6812] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/application.yml ] as ubuntu@99.79.123.96
+ DEBUG [768d6812] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/application.yml ]
+ DEBUG [768d6812] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [a28f749d] Running /usr/bin/env rm /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/application.yml as ubuntu@99.79.123.96
+ DEBUG [a28f749d] Command: /usr/bin/env rm /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/application.yml
+  INFO [a28f749d] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [68d3044e] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/application.yml /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/application.yml as ubuntu@99.79.123.96
+ DEBUG [68d3044e] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/application.yml /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/config/application.yml
+  INFO [68d3044e] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [3e1c23b3] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745 /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/public as ubuntu@99.79.123.96
+ DEBUG [3e1c23b3] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745 /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/public
+  INFO [3e1c23b3] Finished in 0.068 seconds with exit status 0 (successful).
+ DEBUG [c16eea8f] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp/pids ] as ubuntu@99.79.123.96
+ DEBUG [c16eea8f] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp/pids ]
+ DEBUG [c16eea8f] Finished in 0.023 seconds with exit status 1 (failed).
+ DEBUG [160530f6] Running [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp/pids ] as ubuntu@99.79.123.96
+ DEBUG [160530f6] Command: [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp/pids ]
+ DEBUG [160530f6] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [e8d8b32d] Running /usr/bin/env rm -rf /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp/pids as ubuntu@99.79.123.96
+ DEBUG [e8d8b32d] Command: /usr/bin/env rm -rf /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp/pids
+  INFO [e8d8b32d] Finished in 0.028 seconds with exit status 0 (successful).
+  INFO [cea82bb3] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/pids /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp/pids as ubuntu@99.79.123.96
+ DEBUG [cea82bb3] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/pids /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp/pids
+  INFO [cea82bb3] Finished in 0.071 seconds with exit status 0 (successful).
+ DEBUG [622e8c7f] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp/sockets ] as ubuntu@99.79.123.96
+ DEBUG [622e8c7f] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp/sockets ]
+ DEBUG [622e8c7f] Finished in 0.025 seconds with exit status 1 (failed).
+ DEBUG [d0a3c0b1] Running [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp/sockets ] as ubuntu@99.79.123.96
+ DEBUG [d0a3c0b1] Command: [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp/sockets ]
+ DEBUG [d0a3c0b1] Finished in 0.063 seconds with exit status 1 (failed).
+  INFO [bd2de3dc] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/sockets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp/sockets as ubuntu@99.79.123.96
+ DEBUG [bd2de3dc] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/sockets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/tmp/sockets
+  INFO [bd2de3dc] Finished in 0.025 seconds with exit status 0 (successful).
+ DEBUG [119ca8ab] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/log ] as ubuntu@99.79.123.96
+ DEBUG [119ca8ab] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/log ]
+ DEBUG [119ca8ab] Finished in 0.066 seconds with exit status 1 (failed).
+ DEBUG [4eea0bf1] Running [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/log ] as ubuntu@99.79.123.96
+ DEBUG [4eea0bf1] Command: [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/log ]
+ DEBUG [4eea0bf1] Finished in 0.026 seconds with exit status 0 (successful).
+  INFO [07a0dbe3] Running /usr/bin/env rm -rf /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/log as ubuntu@99.79.123.96
+ DEBUG [07a0dbe3] Command: /usr/bin/env rm -rf /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/log
+  INFO [07a0dbe3] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [4d26b88f] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/log /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/log as ubuntu@99.79.123.96
+ DEBUG [4d26b88f] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/log /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/log
+  INFO [4d26b88f] Finished in 0.026 seconds with exit status 0 (successful).
+ DEBUG [d6bf3d29] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/public/assets ] as ubuntu@99.79.123.96
+ DEBUG [d6bf3d29] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/public/assets ]
+ DEBUG [d6bf3d29] Finished in 0.068 seconds with exit status 1 (failed).
+ DEBUG [6455e693] Running [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/public/assets ] as ubuntu@99.79.123.96
+ DEBUG [6455e693] Command: [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/public/assets ]
+ DEBUG [6455e693] Finished in 0.022 seconds with exit status 1 (failed).
+  INFO [1a591d98] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/public/assets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/public/assets as ubuntu@99.79.123.96
+ DEBUG [1a591d98] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/public/assets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745/public/assets
+  INFO [1a591d98] Finished in 0.119 seconds with exit status 0 (successful).
+ DEBUG [7d2569d5] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [7d2569d5] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745'" 1>&2; false; fi
+ DEBUG [7d2569d5] Finished in 0.023 seconds with exit status 0 (successful).
+  INFO [61b42b74] Running /usr/bin/env /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh rvm --install install . as ubuntu@99.79.123.96
+ DEBUG [61b42b74] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202205745 && /usr/bin/env /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh rvm --install install .
+ DEBUG [61b42b74] 	Warning, new version of rvm available '1.29.12', you are using older version '1.29.9'.
+You can disable this warning with:   echo rvm_autoupdate_flag=0 >> ~/.rvmrc
+You can enable auto-update with:     echo rvm_autoupdate_flag=2 >> ~/.rvmrc
+You can update manually with:        rvm get VERSION                         (e.g. 'rvm get stable')
+
+ DEBUG [61b42b74] 	Already installed ruby-2.6.6.
+To reinstall use:
+
+    rvm reinstall ruby-2.6.6
+
+  INFO [61b42b74] Finished in 0.525 seconds with exit status 0 (successful).
+  INFO [55a8756f] Running /usr/bin/env git ls-remote https://github.com/Marc99222/Rocket-Elevators-Foundation HEAD as ubuntu@99.79.123.96
+ DEBUG [55a8756f] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5ffa7064e0f438a1a536.sh" ; /usr/bin/env git ls-remote https://github.com/Marc99222/Rocket-Elevators-Foundation HEAD )
+ DEBUG [55a8756f] 	c1ee27ea9f9b4e9d4ed46a0bb91aa03bf468413e	HEAD
+  INFO [55a8756f] Finished in 0.143 seconds with exit status 0 (successful).
+  INFO [507b8e70] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases as ubuntu@99.79.123.96
+ DEBUG [507b8e70] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases
+  INFO [507b8e70] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO [a71e6db8] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/pids /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/sockets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/log /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/public/assets as ubuntu@99.79.123.96
+ DEBUG [a71e6db8] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/pids /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/sockets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/log /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/public/assets
+  INFO [a71e6db8] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [a2fa45e3] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config as ubuntu@99.79.123.96
+ DEBUG [a2fa45e3] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config
+  INFO [a2fa45e3] Finished in 0.065 seconds with exit status 0 (successful).
+ DEBUG [d54cfe8c] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml ] as ubuntu@99.79.123.96
+ DEBUG [d54cfe8c] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml ]
+ DEBUG [d54cfe8c] Finished in 0.027 seconds with exit status 0 (successful).
+ DEBUG [bb9c52d0] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/application.yml ] as ubuntu@99.79.123.96
+ DEBUG [bb9c52d0] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/application.yml ]
+ DEBUG [bb9c52d0] Finished in 0.105 seconds with exit status 1 (failed).
+ ERROR linked file /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/application.yml does not exist on 99.79.123.96
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-12-02 16:05:52 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [3f5cff77] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [3f5cff77] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/
+  INFO [3f5cff77] Finished in 0.558 seconds with exit status 0 (successful).
+ DEBUG Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [934ab283] Running /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [934ab283] Command: /usr/bin/env chmod +x /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh
+  INFO [934ab283] Finished in 0.116 seconds with exit status 0 (successful).
+  INFO [4d763c99] Running /usr/bin/env mkdir -p /tmp as ubuntu@99.79.123.96
+ DEBUG [4d763c99] Command: /usr/bin/env mkdir -p /tmp
+  INFO [4d763c99] Finished in 0.026 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-a3451d17c791258f6222.sh 0.0%
+  INFO Uploading /tmp/git-ssh-a3451d17c791258f6222.sh 100.0%
+  INFO [39256518] Running /usr/bin/env chmod 700 /tmp/git-ssh-a3451d17c791258f6222.sh as ubuntu@99.79.123.96
+ DEBUG [39256518] Command: /usr/bin/env chmod 700 /tmp/git-ssh-a3451d17c791258f6222.sh
+  INFO [39256518] Finished in 0.028 seconds with exit status 0 (successful).
+ DEBUG [a901c2f7] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ] as ubuntu@99.79.123.96
+ DEBUG [a901c2f7] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo/HEAD ]
+ DEBUG [a901c2f7] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo
+ DEBUG [6ec9e8de] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [6ec9e8de] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi
+ DEBUG [6ec9e8de] Finished in 0.026 seconds with exit status 0 (successful).
+  INFO [6fbe6b96] Running /usr/bin/env git remote set-url origin https://github.com/Marc99222/Rocket-Elevators-Foundation as ubuntu@99.79.123.96
+ DEBUG [6fbe6b96] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a3451d17c791258f6222.sh" ; /usr/bin/env git remote set-url origin https://github.com/Marc99222/Rocket-Elevators-Foundation )
+  INFO [6fbe6b96] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [a7ba1340] Running /usr/bin/env git remote update --prune as ubuntu@99.79.123.96
+ DEBUG [a7ba1340] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a3451d17c791258f6222.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [a7ba1340] 	Fetching origin
+  INFO [a7ba1340] Finished in 0.163 seconds with exit status 0 (successful).
+ DEBUG [f2100929] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [f2100929] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi
+ DEBUG [f2100929] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO [29f0c24e] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 as ubuntu@99.79.123.96
+ DEBUG [29f0c24e] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a3451d17c791258f6222.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 )
+  INFO [29f0c24e] Finished in 0.028 seconds with exit status 0 (successful).
+  INFO [57b992ea] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 as ubuntu@99.79.123.96
+ DEBUG [57b992ea] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a3451d17c791258f6222.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 )
+  INFO [57b992ea] Finished in 0.762 seconds with exit status 0 (successful).
+ DEBUG [6403cfbc] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [6403cfbc] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo'" 1>&2; false; fi
+ DEBUG [6403cfbc] Finished in 0.021 seconds with exit status 0 (successful).
+ DEBUG [3c0b2a2c] Running /usr/bin/env git rev-list --max-count=1 main as ubuntu@99.79.123.96
+ DEBUG [3c0b2a2c] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a3451d17c791258f6222.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [3c0b2a2c] 	c1ee27ea9f9b4e9d4ed46a0bb91aa03bf468413e
+ DEBUG [3c0b2a2c] Finished in 0.072 seconds with exit status 0 (successful).
+ DEBUG [42364d2f] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [42364d2f] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553'" 1>&2; false; fi
+ DEBUG [42364d2f] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [52a8ccd6] Running /usr/bin/env echo "c1ee27ea9f9b4e9d4ed46a0bb91aa03bf468413e" > REVISION as ubuntu@99.79.123.96
+ DEBUG [52a8ccd6] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 && /usr/bin/env echo "c1ee27ea9f9b4e9d4ed46a0bb91aa03bf468413e" > REVISION
+  INFO [52a8ccd6] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [4224fe09] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config as ubuntu@99.79.123.96
+ DEBUG [4224fe09] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config
+  INFO [4224fe09] Finished in 0.026 seconds with exit status 0 (successful).
+ DEBUG [7b2420ac] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/database.yml ] as ubuntu@99.79.123.96
+ DEBUG [7b2420ac] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/database.yml ]
+ DEBUG [7b2420ac] Finished in 0.066 seconds with exit status 1 (failed).
+ DEBUG [cd3ea0e9] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/database.yml ] as ubuntu@99.79.123.96
+ DEBUG [cd3ea0e9] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/database.yml ]
+ DEBUG [cd3ea0e9] Finished in 0.023 seconds with exit status 0 (successful).
+  INFO [f689c961] Running /usr/bin/env rm /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/database.yml as ubuntu@99.79.123.96
+ DEBUG [f689c961] Command: /usr/bin/env rm /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/database.yml
+  INFO [f689c961] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [6e6ed7cc] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/database.yml as ubuntu@99.79.123.96
+ DEBUG [6e6ed7cc] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/database.yml
+  INFO [6e6ed7cc] Finished in 0.025 seconds with exit status 0 (successful).
+ DEBUG [c625c743] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/application.yml ] as ubuntu@99.79.123.96
+ DEBUG [c625c743] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/application.yml ]
+ DEBUG [c625c743] Finished in 0.068 seconds with exit status 1 (failed).
+ DEBUG [d920989f] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/application.yml ] as ubuntu@99.79.123.96
+ DEBUG [d920989f] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/application.yml ]
+ DEBUG [d920989f] Finished in 0.023 seconds with exit status 0 (successful).
+  INFO [9e43c225] Running /usr/bin/env rm /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/application.yml as ubuntu@99.79.123.96
+ DEBUG [9e43c225] Command: /usr/bin/env rm /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/application.yml
+  INFO [9e43c225] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [7d366d8d] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/application.yml /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/application.yml as ubuntu@99.79.123.96
+ DEBUG [7d366d8d] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/application.yml /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/config/application.yml
+  INFO [7d366d8d] Finished in 0.026 seconds with exit status 0 (successful).
+  INFO [b74e6953] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public as ubuntu@99.79.123.96
+ DEBUG [b74e6953] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public
+  INFO [b74e6953] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [35fcbea2] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp/pids ] as ubuntu@99.79.123.96
+ DEBUG [35fcbea2] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp/pids ]
+ DEBUG [35fcbea2] Finished in 0.023 seconds with exit status 1 (failed).
+ DEBUG [072bab3f] Running [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp/pids ] as ubuntu@99.79.123.96
+ DEBUG [072bab3f] Command: [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp/pids ]
+ DEBUG [072bab3f] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [e0448ad3] Running /usr/bin/env rm -rf /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp/pids as ubuntu@99.79.123.96
+ DEBUG [e0448ad3] Command: /usr/bin/env rm -rf /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp/pids
+  INFO [e0448ad3] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [afca8224] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/pids /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp/pids as ubuntu@99.79.123.96
+ DEBUG [afca8224] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/pids /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp/pids
+  INFO [afca8224] Finished in 0.073 seconds with exit status 0 (successful).
+ DEBUG [33ce6bdd] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp/sockets ] as ubuntu@99.79.123.96
+ DEBUG [33ce6bdd] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp/sockets ]
+ DEBUG [33ce6bdd] Finished in 0.022 seconds with exit status 1 (failed).
+ DEBUG [45073cb3] Running [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp/sockets ] as ubuntu@99.79.123.96
+ DEBUG [45073cb3] Command: [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp/sockets ]
+ DEBUG [45073cb3] Finished in 0.067 seconds with exit status 1 (failed).
+  INFO [9bbdfb08] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/sockets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp/sockets as ubuntu@99.79.123.96
+ DEBUG [9bbdfb08] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/sockets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/tmp/sockets
+  INFO [9bbdfb08] Finished in 0.028 seconds with exit status 0 (successful).
+ DEBUG [a511221d] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/log ] as ubuntu@99.79.123.96
+ DEBUG [a511221d] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/log ]
+ DEBUG [a511221d] Finished in 0.066 seconds with exit status 1 (failed).
+ DEBUG [ed15d416] Running [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/log ] as ubuntu@99.79.123.96
+ DEBUG [ed15d416] Command: [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/log ]
+ DEBUG [ed15d416] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [dae39840] Running /usr/bin/env rm -rf /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/log as ubuntu@99.79.123.96
+ DEBUG [dae39840] Command: /usr/bin/env rm -rf /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/log
+  INFO [dae39840] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [2d9e6462] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/log /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/log as ubuntu@99.79.123.96
+ DEBUG [2d9e6462] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/log /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/log
+  INFO [2d9e6462] Finished in 0.024 seconds with exit status 0 (successful).
+ DEBUG [bd8beb43] Running [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets ] as ubuntu@99.79.123.96
+ DEBUG [bd8beb43] Command: [ -L /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets ]
+ DEBUG [bd8beb43] Finished in 0.067 seconds with exit status 1 (failed).
+ DEBUG [cd509253] Running [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets ] as ubuntu@99.79.123.96
+ DEBUG [cd509253] Command: [ -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets ]
+ DEBUG [cd509253] Finished in 0.023 seconds with exit status 1 (failed).
+  INFO [93d01c97] Running /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/public/assets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets as ubuntu@99.79.123.96
+ DEBUG [93d01c97] Command: /usr/bin/env ln -s /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/public/assets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets
+  INFO [93d01c97] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [1c7b068a] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [1c7b068a] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553'" 1>&2; false; fi
+ DEBUG [1c7b068a] Finished in 0.023 seconds with exit status 0 (successful).
+  INFO [17d9089f] Running /usr/bin/env /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh rvm --install install . as ubuntu@99.79.123.96
+ DEBUG [17d9089f] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 && /usr/bin/env /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh rvm --install install .
+ DEBUG [17d9089f] 	Warning, new version of rvm available '1.29.12', you are using older version '1.29.9'.
+You can disable this warning with:   echo rvm_autoupdate_flag=0 >> ~/.rvmrc
+You can enable auto-update with:     echo rvm_autoupdate_flag=2 >> ~/.rvmrc
+You can update manually with:        rvm get VERSION                         (e.g. 'rvm get stable')
+
+ DEBUG [17d9089f] 	Already installed ruby-2.6.6.
+To reinstall use:
+
+    rvm reinstall ruby-2.6.6
+
+  INFO [17d9089f] Finished in 0.479 seconds with exit status 0 (successful).
+  INFO [f99237d3] Running /usr/bin/env git ls-remote https://github.com/Marc99222/Rocket-Elevators-Foundation HEAD as ubuntu@99.79.123.96
+ DEBUG [f99237d3] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a3451d17c791258f6222.sh" ; /usr/bin/env git ls-remote https://github.com/Marc99222/Rocket-Elevators-Foundation HEAD )
+ DEBUG [f99237d3] 	c1ee27ea9f9b4e9d4ed46a0bb91aa03bf468413e	HEAD
+  INFO [f99237d3] Finished in 0.149 seconds with exit status 0 (successful).
+  INFO [02760907] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases as ubuntu@99.79.123.96
+ DEBUG [02760907] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases
+  INFO [02760907] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [a0935281] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/pids /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/sockets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/log /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/public/assets as ubuntu@99.79.123.96
+ DEBUG [a0935281] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/pids /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/tmp/sockets /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/log /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/public/assets
+  INFO [a0935281] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [274ab19e] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config as ubuntu@99.79.123.96
+ DEBUG [274ab19e] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config
+  INFO [274ab19e] Finished in 0.066 seconds with exit status 0 (successful).
+ DEBUG [89212890] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml ] as ubuntu@99.79.123.96
+ DEBUG [89212890] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/database.yml ]
+ DEBUG [89212890] Finished in 0.026 seconds with exit status 0 (successful).
+ DEBUG [7a36dc9a] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/application.yml ] as ubuntu@99.79.123.96
+ DEBUG [7a36dc9a] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/config/application.yml ]
+ DEBUG [7a36dc9a] Finished in 0.069 seconds with exit status 0 (successful).
+ DEBUG [d8bde9e0] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/puma.rb ] as ubuntu@99.79.123.96
+ DEBUG [d8bde9e0] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/puma.rb ]
+ DEBUG [d8bde9e0] Finished in 0.022 seconds with exit status 0 (successful).
+ DEBUG [eab2b454] Running [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/REVISION ] as ubuntu@99.79.123.96
+ DEBUG [eab2b454] Command: [ -f /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/REVISION ]
+ DEBUG [eab2b454] Finished in 0.073 seconds with exit status 0 (successful).
+ DEBUG [5a624913] Running /usr/bin/env cat /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/REVISION 2>/dev/null as ubuntu@99.79.123.96
+ DEBUG [5a624913] Command: /usr/bin/env cat /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/REVISION 2>/dev/null
+ DEBUG [5a624913] 	c1ee27ea9f9b4e9d4ed46a0bb91aa03bf468413e
+ DEBUG [5a624913] Finished in 0.025 seconds with exit status 0 (successful).
+ DEBUG [b82dcd09] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [b82dcd09] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553'" 1>&2; false; fi
+ DEBUG [b82dcd09] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO [82ba2648] Running /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh . bundle config --local deployment true as ubuntu@99.79.123.96
+ DEBUG [82ba2648] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 && /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh . bundle config --local deployment true
+  INFO [82ba2648] Finished in 1.053 seconds with exit status 0 (successful).
+  INFO [3f312691] Running /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh . bundle config --local path /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle as ubuntu@99.79.123.96
+ DEBUG [3f312691] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 && /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh . bundle config --local path /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle
+  INFO [3f312691] Finished in 1.024 seconds with exit status 0 (successful).
+  INFO [c5cc38a8] Running /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh . bundle config --local without production as ubuntu@99.79.123.96
+ DEBUG [c5cc38a8] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 && /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh . bundle config --local without production
+  INFO [c5cc38a8] Finished in 0.975 seconds with exit status 0 (successful).
+ DEBUG [ebc2e354] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [ebc2e354] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553'" 1>&2; false; fi
+ DEBUG [ebc2e354] Finished in 0.070 seconds with exit status 0 (successful).
+ DEBUG [17d18e1d] Running /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh . bundle check as ubuntu@99.79.123.96
+ DEBUG [17d18e1d] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 && /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh . bundle check
+ DEBUG [17d18e1d] 	Your Gemfile lists the gem capistrano (~> 3.10) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once.
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+ DEBUG [17d18e1d] 	Your Gemfile lists the gem capistrano-rails (~> 1.4) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once.
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+ DEBUG [17d18e1d] 	Your Gemfile lists the gem capistrano-bundler (>= 1.1.0) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once.
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+ DEBUG [17d18e1d] 	Your Gemfile lists the gem rvm1-capistrano3 (>= 0) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once.
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+ DEBUG [17d18e1d] 	Your Gemfile lists the gem capistrano3-puma (>= 0) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once.
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+ DEBUG [17d18e1d] 	https://github.com/faker-ruby/faker.git (at master@620be74) is not yet checked
+out. Run `bundle install` first.
+ DEBUG [17d18e1d] Finished in 1.145 seconds with exit status 11 (failed).
+  INFO [a740a964] Running /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh . bundle install --jobs 4 --quiet as ubuntu@99.79.123.96
+ DEBUG [a740a964] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 && /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh . bundle install --jobs 4 --quiet
+ DEBUG [a740a964] 	Your Gemfile lists the gem capistrano (~> 3.10) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once.
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+ DEBUG [a740a964] 	Your Gemfile lists the gem capistrano-rails (~> 1.4) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once.
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+ DEBUG [a740a964] 	Your Gemfile lists the gem capistrano-bundler (>= 1.1.0) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once.
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+Your Gemfile lists the gem rvm1-capistrano3 (>= 0) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once.
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+ DEBUG [a740a964] 	Your Gemfile lists the gem capistrano3-puma (>= 0) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once.
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+  INFO [a740a964] Finished in 269.982 seconds with exit status 0 (successful).
+ DEBUG [bf9a8fb3] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [bf9a8fb3] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553'" 1>&2; false; fi
+ DEBUG [bf9a8fb3] Finished in 0.023 seconds with exit status 0 (successful).
+  INFO [eba51378] Running /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh . bundle exec rake assets:precompile as ubuntu@99.79.123.96
+ DEBUG [eba51378] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 && ( export RAILS_ENV="development" RAILS_GROUPS="" ; /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh . bundle exec rake assets:precompile )
+ DEBUG [eba51378] 	W, [2021-12-02T21:10:36.845791 #1836946]  WARN -- : Removed sourceMappingURL comment for missing asset 'jquery-migrate.min.map' from /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/rails_admin-2.2.1/app/assets/javascripts/rails_admin/jquery.migrate.js
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:37.361668 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/rails_admin-b203137180eb25af4e825515ac01cfd91ffaead55e9331e8fff80d56f51f6c88.js
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:37.361967 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/rails_admin-b203137180eb25af4e825515ac01cfd91ffaead55e9331e8fff80d56f51f6c88.js.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.387391 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/rails_admin-34fb96d5ef58608689cee723c17c26facad38fe1d4433646c7f143079d31d61d.css
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.387672 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/rails_admin-34fb96d5ef58608689cee723c17c26facad38fe1d4433646c7f143079d31d61d.css.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.388177 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/aristo/images/bg_fallback-bad53cee26694a42bdba717337e2de9f997ebf3ded300b8c3ff48ac5192c1903.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.388635 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/aristo/images/ui-icons_222222_256x240-310ae73efc6774716f0a80ce2141565fddec51702330a8066fd5e220437ae321.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.389501 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/aristo/images/ui-icons_454545_256x240-d59c6da436d1a19aa35bcbf2d400ad160f2b2568fbbfa2f9ebfc192d14025474.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.390058 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/aristo/images/icon_sprite-34a30806fcba43a2effc9739cb7a370a865199a7d38bfcbc7c2474ef3ff70ded.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.391670 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/aristo/images/slider_handles-4b523f3d1bd18af5fec23ec7d58ed85e4c7e8f4685fe85a8407e2d9017bf6484.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.395981 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/aristo/images/progress_bar-a2ed712d76dcffc7a06918cd389511bca2cf7bb91c12b1d865bf44c7b2c46289.gif
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.397143 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/multiselect/icon_sprite-34a30806fcba43a2effc9739cb7a370a865199a7d38bfcbc7c2474ef3ff70ded.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.397592 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-n-light-e7daf3169259a9fd6b8177b8e89ff2b964cd3dababd580a46d7fb4eecc07763b.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.398313 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-n-dark-bb53269e44173a496d2620bad201ca838a57b67c40b3439b5ce89345ef9e888b.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.398990 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-s-light-e1698d37f37f7db85ce6736810a34b1a229306be8a3f3be156fbaa47dd6cd160.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.399678 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-s-dark-2bf097798e2b1db766a16ff4f335d3fe94bd51f92dc2ddf47c8a370ba31189c0.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.400381 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/colorpicker/select2-8ddf680d1a86d603653e43f694bbb6dc1010aa81f5c0c9c87181e10e064e503b.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.400742 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/colorpicker/custom_background-52967b595ae718ad95520b9cf2b22551fb8cb0d81a171db869b00d2b604b4976.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.401425 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/colorpicker/colorpicker_overlay-ba21ab85c59167b61af508e34a22ee344c97bb11454d287a47691fa2fb182856.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.402193 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/colorpicker/colorpicker_select-980ae86d6aab751f6f67a1191d78c0fa54b533583456b905ec43b34d5806ee2d.gif
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.402803 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/colorpicker/custom_indic-8ca62ee85015e67671f2312a2fead633740335f65e254d8f4c3ea29b99f62de7.gif
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.403560 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/colorpicker/custom_hex-4b1a7b08312edc3732cf30c7d8d5291abea41c64311c3d05d67a586cbe3dcf37.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.404218 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/colorpicker/custom_rgb_r-54289ccad89df00514d84ba6d16d1a0abc0d61de95dcfc054bf2202e238a7cb6.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.404898 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/colorpicker/custom_rgb_g-8ab4d41c46fc26080b75eecc6f8c25d8f6db5264cf56ecc4993f86d100ebd71f.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.405493 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/colorpicker/custom_rgb_b-22f2da1810cd9da18a1f93418b8f45bd3cb676aa9790ad5e1aba37779fb3ac31.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.406024 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/colorpicker/custom_hsb_h-df01edb80a710cdd9d9057201eaa682a8c86cd80ad6c6929f1d4a9182ad6aed3.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.406677 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/colorpicker/custom_hsb_s-9277f3fd9eb79baef2384f7b38968184fd40d631024149c7b41543b7796c0706.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.407390 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/colorpicker/custom_hsb_b-7160b5fd5c5779102cb91f771b80ef2621dabe10bf06e8359deaefece831b58b.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.407997 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/colorpicker/custom_submit-3a57bad878f6d608b998e36acefe2325d786d4631abeecc5d400ca5c062f5ce5.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.408700 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.409285 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.409633 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.410204 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/fontawesome-webfont-ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07.woff
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.411548 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.411926 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.412501 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.413299 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.416601 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/jquery.colorpicker-3a18b8912af93099a30d1cf8f47c1084f093d1d208863a218e28f098f64dbf78.js
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:51.417020 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/jquery.colorpicker-3a18b8912af93099a30d1cf8f47c1084f093d1d208863a218e28f098f64dbf78.js.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:52.519949 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/jquery.colorpicker-95ad50899f88817e1f6e9cbe9ac3267b4d7c03941dfc842e466c79d669eb0759.css
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:52.520119 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/jquery.colorpicker-95ad50899f88817e1f6e9cbe9ac3267b4d7c03941dfc842e466c79d669eb0759.css.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:10:52.526039 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2
+ DEBUG [eba51378] 	W, [2021-12-02T21:11:01.064963 #1836946]  WARN -- : Removed sourceMappingURL comment for missing asset 'bootstrap.min.js.map' from /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/app/assets/javascripts/plugins/bootstrap/js/bootstrap.min.js
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:01.318149 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/application-59e98db38dca665de57a7467c5dbd08f1f11841d8d33e830e3a96292b91232ac.js
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:01.318311 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/application-59e98db38dca665de57a7467c5dbd08f1f11841d8d33e830e3a96292b91232ac.js.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:01.334210 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/plugins/bootstrap/css/bootstrap.min.css-ccbfe49f65c34dea54d81f30016cd095c75ae6d37126310bd2e4371665403ab2.map
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:01.342021 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/plugins/bootstrap/js/bootstrap.min.js-45b65676814bee78f75053beb0ed34fda56a054247b5805ee5e95aca4cfce709.map
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:01.349007 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/plugins/slider.revolution/assets/loader2-0c4d1b66cbed8c0ba7bfe1d047409e80b99684794ba66e9556503890eae17f2d.gif
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:01.355087 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/plugins/slider.revolution/assets/timer-a15348b049a18c85702dde38f379aa78d3809af8c07adcf25236c69b03f6f746.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:01.359855 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/plugins/slider.revolution/font/revicons-4ca02b8a5c8034de8ddb76e33e50e8398758a83bd18a5073493cace46362780a.ttf
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:01.360335 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/plugins/slider.revolution/font/revicons-4ca02b8a5c8034de8ddb76e33e50e8398758a83bd18a5073493cace46362780a.ttf.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:01.363976 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/plugins/slider.revolution/font/revicons-f7b9c3065e55fa3b9e320093612e7b30dcb14355a44ec461247b495a3e729686.woff
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:01.365444 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/popper.min.js-e2e2bc49ff2c6ad2847b6098e0e6b7984a5d309e1023dca6fe2fcf8336793a69.map
+ DEBUG [eba51378] 	autoprefixer: /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/app/assets/stylesheets/application.scss:20435:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+autoprefixer: /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/app/assets/stylesheets/application.scss:20448:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [eba51378] 	autoprefixer: /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/app/assets/stylesheets/essentials.css:1300:2: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+autoprefixer: /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/app/assets/stylesheets/essentials.css:1311:2: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [eba51378] 	autoprefixer: /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/app/assets/stylesheets/slider.revolution/css/settings.scss:1550:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.003493 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/application-33187bb6d737f208be242f6497b06b127c39b171e5a097068320766242ae6b8c.css
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.003807 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/application-33187bb6d737f208be242f6497b06b127c39b171e5a097068320766242ae6b8c.css.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.004385 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.004847 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.005552 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/fontawesome-webfont-ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07.woff
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.006536 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.007256 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.007635 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.008250 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.023652 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/bootstrap/css/bootstrap.min.css-ccbfe49f65c34dea54d81f30016cd095c75ae6d37126310bd2e4371665403ab2.map
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.027450 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/rails_admin/custom/froala_editor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.min
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.028001 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/slider.revolution/assets/loader2-0c4d1b66cbed8c0ba7bfe1d047409e80b99684794ba66e9556503890eae17f2d.gif
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.028706 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/slider.revolution/assets/timer-a15348b049a18c85702dde38f379aa78d3809af8c07adcf25236c69b03f6f746.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.029722 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/slider.revolution/font/revicons-4ca02b8a5c8034de8ddb76e33e50e8398758a83bd18a5073493cace46362780a.ttf
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.030156 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/slider.revolution/font/revicons-4ca02b8a5c8034de8ddb76e33e50e8398758a83bd18a5073493cace46362780a.ttf.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.030602 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/slider.revolution/font/revicons-f7b9c3065e55fa3b9e320093612e7b30dcb14355a44ec461247b495a3e729686.woff
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.034347 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/blazer/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.034716 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/blazer/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.037238 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/blazer/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.037548 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/blazer/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.040073 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/blazer/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.040571 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/blazer/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.045084 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/blazer/glyphicons-halflings-regular-a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742.woff
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.046857 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/blazer/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.049104 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/blazer/favicon-392743107d0d14fea5699cff1e80d209db7058ef660e643ff9c9f07e990ac084.png
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.887602 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/blazer/application-2daf1723ce180e9e73695733ca9f1ccc53dd9565dd0aef05a931f22f073746e1.js
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:53.887761 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/blazer/application-2daf1723ce180e9e73695733ca9f1ccc53dd9565dd0aef05a931f22f073746e1.js.gz
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:59.370201 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/blazer/application-6558d49e6204bf3e61da74a6cd4f8a7b080701bd9ca0894eb395117880708a88.css
+ DEBUG [eba51378] 	I, [2021-12-02T21:11:59.370358 #1836946]  INFO -- : Writing /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/blazer/application-6558d49e6204bf3e61da74a6cd4f8a7b080701bd9ca0894eb395117880708a88.css.gz
+  INFO [eba51378] Finished in 88.267 seconds with exit status 0 (successful).
+ DEBUG [d39ed709] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [d39ed709] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553'" 1>&2; false; fi
+ DEBUG [d39ed709] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [bc28071b] Running /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/assets_manifest_backup as ubuntu@99.79.123.96
+ DEBUG [bc28071b] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 && /usr/bin/env mkdir -p /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/assets_manifest_backup
+  INFO [bc28071b] Finished in 0.068 seconds with exit status 0 (successful).
+ DEBUG [d0457a7c] Running /usr/bin/env ls /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/.sprockets-manifest* as ubuntu@99.79.123.96
+ DEBUG [d0457a7c] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 && /usr/bin/env ls /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/.sprockets-manifest*
+ DEBUG [d0457a7c] 	/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/.sprockets-manifest-19b79c1b9f563c7ae35758d79f7c3cf8.json
+ DEBUG [d0457a7c] Finished in 0.027 seconds with exit status 0 (successful).
+ DEBUG [ef8aa88c] Running /usr/bin/env ls /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/.sprockets-manifest* as ubuntu@99.79.123.96
+ DEBUG [ef8aa88c] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 && /usr/bin/env ls /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/.sprockets-manifest*
+ DEBUG [ef8aa88c] 	/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/.sprockets-manifest-19b79c1b9f563c7ae35758d79f7c3cf8.json
+ DEBUG [ef8aa88c] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [7e98360c] Running /usr/bin/env cp /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/.sprockets-manifest-19b79c1b9f563c7ae35758d79f7c3cf8.json /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/assets_manifest_backup as ubuntu@99.79.123.96
+ DEBUG [7e98360c] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 && /usr/bin/env cp /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/public/assets/.sprockets-manifest-19b79c1b9f563c7ae35758d79f7c3cf8.json /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553/assets_manifest_backup
+  INFO [7e98360c] Finished in 0.028 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [9cd210d0] Running if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [9cd210d0] Command: if test ! -d /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553; then echo "Directory does not exist '/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553'" 1>&2; false; fi
+ DEBUG [9cd210d0] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [6a468b2c] Running /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh . bundle exec rake db:migrate as ubuntu@99.79.123.96
+ DEBUG [6a468b2c] Command: cd /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/releases/20211202210553 && ( export RAILS_ENV="development" ; /home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/rvm1scripts/rvm-auto.sh . bundle exec rake db:migrate )
+ DEBUG [6a468b2c] 	rake aborted!
+ActiveRecord::NoDatabaseError: Unknown database 'MARC_ALEXANDRE_PERUSSE_CAVANAGH'
+ DEBUG [6a468b2c] 	/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:26:in `rescue in mysql2_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_handling.rb:90:in `connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/tasks/database_tasks.rb:172:in `migrate'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/railties/databases.rake:60:in `block (2 levels) in <main>'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/rake-13.0.6/exe/rake:27:in `<top (required)>'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `eval'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `<main>'
+
+Caused by:
+ DEBUG [6a468b2c] 	Mysql2::Error: Unknown database 'MARC_ALEXANDRE_PERUSSE_CAVANAGH'
+ DEBUG [6a468b2c] 	/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `connect'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `initialize'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/connection_handling.rb:90:in `connection'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/tasks/database_tasks.rb:172:in `migrate'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/railties/databases.rake:60:in `block (2 levels) in <main>'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/gems/rake-13.0.6/exe/rake:27:in `<top (required)>'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `eval'
+/home/ubuntu/apps/MARC_ALEXANDRE_PERUSSE_CAVANAGH/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `<main>'
+Tasks: TOP => db:migrate
+ DEBUG [6a468b2c] 	(See full trace by running task with --trace)

@@ -45,3 +45,27 @@ production:
 
 
 
+# default: &default
+#   adapter: mysql2
+#   encoding: utf8
+#   username: codeboxx
+#   password: Codeboxx1!
+#   host: codeboxx.cq6zrczewpu2.us-east-1.rds.amazonaws.com
+#   port: 3306
+# postgres: &postgres
+#   adapter: postgresql
+#   encoding: utf8
+#   username: codeboxx
+#   password: Codeboxx1!
+#   host: codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com
+#   port: 5432
+# primary:
+#   <<: *default
+#   database: MARC_ALEXANDRE_PERUSSE_CAVANAGH
+# secondary:
+#   <<: *postgres
+#   database: MARC_ALEXANDRE_PERUSSE_CAVANAGH
+#   migrations_paths: db/secondary_migrate
+# development:
+#   <<: *default
+#   database: MARC_ALEXANDRE_PERUSSE_CAVANAGH
