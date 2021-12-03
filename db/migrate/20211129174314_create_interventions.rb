@@ -11,7 +11,7 @@ class CreateInterventions < ActiveRecord::Migration[5.2]
       t.datetime :end_at,  null: true
 
 
-      t.timestamps
+      
     end
   end
 end
