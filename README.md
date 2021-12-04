@@ -35,6 +35,8 @@ At the time of saving the service request, the website form creates a new ticket
 
 8- Description of the request for intervention
 
+**** The code for Zendesk are commented in controller Intervention file in the def create function because i have somme issues with the creation of my Zendesk account.
+
 # POSTMAN JSON LINK FOR THE APIREST : 
 
 https://www.getpostman.com/collections/b3fb8bfc5767a9283f8c
