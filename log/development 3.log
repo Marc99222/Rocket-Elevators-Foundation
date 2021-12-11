@@ -1,0 +1,32 @@
+  [1m[35m (54.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ spec/rails_helper.rb:28
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ spec/rails_helper.rb:28
+  [1m[35m (11.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/bin/rspec:23
+  [1m[35m (24.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/bin/rspec:23
+  [1m[35m (36.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/bin/rspec:23
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/bin/rspec:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/bin/rspec:23
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/bin/rspec:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/bin/rspec:23
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  ↳ lib/elevator_media.rb:19
+  [1m[36mCustomer Load (81.9ms)[0m  [1m[34mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  ↳ lib/elevator_media.rb:19
+  [1m[36mBuilding Load (1.1ms)[0m  [1m[34mSELECT  `buildings`.* FROM `buildings` WHERE `buildings`.`id` = 1 LIMIT 1[0m
+  ↳ lib/elevator_media.rb:19
+  [1m[36mBattery Load (1.2ms)[0m  [1m[34mSELECT  `batteries`.* FROM `batteries` WHERE `batteries`.`id` = 1 LIMIT 1[0m
+  ↳ lib/elevator_media.rb:19
+  [1m[36mIntervention Create (38.0ms)[0m  [1m[32mINSERT INTO `interventions` (`author`, `result`, `report`, `status`, `created_at`, `updated_at`, `customer_id`, `building_id`, `battery_id`, `column_id`, `elevator_id`, `employee_id`) VALUES ('2', 'Incomplet', 'Test1', 'pending', '2021-12-11 03:01:35', '2021-12-11 03:01:35', 1, 1, 1, 1, 1, 1)[0m
+  ↳ lib/elevator_media.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  ↳ lib/elevator_media.rb:19
+  [1m[35m (31.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/marcalexandreperussecavanagh/.rvm/gems/ruby-2.6.6/bin/rspec:23
