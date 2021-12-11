@@ -46,12 +46,59 @@ bundle exec rspec --format documentation
 
 1- Vulnerable and Outdated Components
 
+command in the terminal for updating the gem : Bundle update
+
 2- Broken Access Control 
+
+controller quote: 
+before_action :authenticate_user!, :only => [:index]
 
 3- Identification and Authentication Failures 
 
+app/models/user.rb: 
+
+validate :password_complexity
+ def password_complexity
+   # Regexp extracted from https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a
+   return if password.blank? || password =~ /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,70}$/
+   errors.add :password, 'Complexity requirement not met. Length should be 8-70 characters and include: 1 uppercase, 1 lowercase, 1 digit and 1 special character'
+ end
+
 4- Cryptographic Failures
 
+#in config/environments/production.rb
+   config.to_prepare { Devise::SessionsController.force_ssl }
+   config.to_prepare { Devise::RegistrationsController.force_ssl }
+
+# Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
+ config.force_ssl = true
+
+Application controller : 
+First  add : 
+
+protect_from_forgery prepend: true, with: :exception 
+   skip_before_action :verify_authenticity_token
+
+Add this two methods in application_controller.rb
+# Tell Devise to redirect after sign_in
+   def after_sign_in_path_for(resource_or_scope)
+       "https://marcapc.com/"
+   end
+ 
+   # Tell Devise to redirect after sign_out
+   def after_sign_out_path_for(resource_or_scope)
+           "https://marcapc.com/"
+   end
+Final result :
+
+
+
 5- 2021-Insecure Design
+
+
+https://www.google.com/recaptcha/admin/create
+
+https://www.google.com/recaptcha/about/
+
 
 
