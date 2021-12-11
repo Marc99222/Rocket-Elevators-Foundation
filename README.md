@@ -66,31 +66,7 @@ validate :password_complexity
 
 4- Cryptographic Failures
 
-#in config/environments/production.rb
-   config.to_prepare { Devise::SessionsController.force_ssl }
-   config.to_prepare { Devise::RegistrationsController.force_ssl }
-
-# Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
- config.force_ssl = true
-
-Application controller : 
-First  add : 
-
-protect_from_forgery prepend: true, with: :exception 
-   skip_before_action :verify_authenticity_token
-
-Add this two methods in application_controller.rb
-# Tell Devise to redirect after sign_in
-   def after_sign_in_path_for(resource_or_scope)
-       "https://marcapc.com/"
-   end
- 
-   # Tell Devise to redirect after sign_out
-   def after_sign_out_path_for(resource_or_scope)
-           "https://marcapc.com/"
-   end
-Final result :
-
+Https 
 
 
 5- 2021-Insecure Design
