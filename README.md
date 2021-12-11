@@ -36,4 +36,22 @@ At the time of saving the service request, the website form creates a new ticket
 
 https://www.getpostman.com/collections/b3fb8bfc5767a9283f8c
 
+# RSPEC
+
+For start the test put this command in the terminal:
+
+bundle exec rspec --format documentation 
+
+# Security 
+
+1- Vulnerable and Outdated Components
+
+2- Broken Access Control 
+
+3- Identification and Authentication Failures 
+
+4- Cryptographic Failures
+
+5- 2021-Insecure Design
+
 
